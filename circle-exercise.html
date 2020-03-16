@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circles Exercise</title>
+	<script type="text/javascript" src = "paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="circles.css">
+	<script type="text/paperscript" canvas="myCanvas">
+		
+	for(var xpos = 50; xpos < 550; xpos+=50){
+		for(var ypos = 50; ypos < 550; ypos+=50){
+			new Path.Circle(new Point(xpos, ypos), 8).fillColor = 'yellow';
+		}
+	}
+
+	</script>
+
+</head>
+<body>
+
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
